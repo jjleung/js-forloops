@@ -223,7 +223,20 @@ Inside of this function write a for-loop that will iterate through the contents 
 
 console.log("** * * Problem 10 * * **");
 
+var valuesArray = [99, 66, 829, 1941, 8, 76];
+var copyValuesArray = [];
 
+function copyArray(originArray, destinationArray){
+
+	for (var i = 0; i < originArray.length; i++){
+
+		destinationArray.push(originArray[i]);
+	}
+
+	return destinationArray;
+}
+
+console.log("copyArray(valuesArray, copyValuesArray): " + copyArray(valuesArray, copyValuesArray));
 
 console.log("----------------------------------------------------------");
 
