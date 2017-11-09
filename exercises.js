@@ -101,12 +101,13 @@ console.log("** * * Problem 5 * * **");
 
 var evenNumArr = [];
 
-for (i = 0; evenNumArr.length <= 50; i+=2){
+for (i = 0; evenNumArr.length < 50; i+=2){
 
 	evenNumArr.push(i);
 }
 
 console.log("evenNumArr: " + evenNumArr);
+console.log("evenNumArr.length: " + evenNumArr.length);
 
 console.log("----------------------------------------------------------");
 
@@ -119,7 +120,17 @@ Console.log your results.
 
 console.log("** * * Problem 6 * * **");
 
+var oddSum = 0;
+var oddIter = 0;
 
+for (i = 1; oddIter < 50; i+=2){
+
+	oddSum += i;
+	oddIter++;
+}
+
+console.log("oddSum: " + oddSum);
+console.log("numbers added: " + oddIter);
 
 console.log("----------------------------------------------------------");  
 
@@ -131,6 +142,8 @@ Note that every odd index value in `oopsArray` is currently `undefined`. Using a
 */
 
 console.log("** * * Problem 7 * * **");
+
+
 
 console.log("----------------------------------------------------------");
 
