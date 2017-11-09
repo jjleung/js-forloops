@@ -189,6 +189,24 @@ Inside of this function write a for-loop that will iterate through the `napSched
 
 console.log("** * * Problem 9 * * **");
 
+var napSchedule = [false, false, true, false, true, true];
+
+function nap(schedule){
+
+	for (var i = 0; i < schedule.length; i++){
+
+		if(schedule[i] == true){
+
+			console.log("ZzZzZzZz");
+		} else{
+
+			console.log("Gotta get coding!");
+		}
+	}
+}
+
+nap(napSchedule);
+
 console.log("----------------------------------------------------------");
 
 /* 10) Copy Pasta
@@ -204,6 +222,8 @@ Inside of this function write a for-loop that will iterate through the contents 
 */
 
 console.log("** * * Problem 10 * * **");
+
+
 
 console.log("----------------------------------------------------------");
 
