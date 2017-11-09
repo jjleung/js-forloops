@@ -143,7 +143,16 @@ Note that every odd index value in `oopsArray` is currently `undefined`. Using a
 
 console.log("** * * Problem 7 * * **");
 
+var oopsArray = ["turn", ,"down", ,"for", ,"what"];
 
+for (i = 0; i < oopsArray.length; i++){
+
+	if (oopsArray[i] == undefined){
+
+		oopsArray[i] = "nope";
+	}
+}
+console.log("oopsArray: " + oopsArray);
 
 console.log("----------------------------------------------------------");
 
@@ -160,6 +169,11 @@ turn
 */
 
 console.log("** * * Problem 8 * * **");
+
+for (i = oopsArray.length -1; i >= 0; i--){
+
+	console.log(oopsArray[i]);
+}
 
 console.log("----------------------------------------------------------");
 
