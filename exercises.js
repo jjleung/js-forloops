@@ -99,6 +99,15 @@ Console.log your results.
 
 console.log("** * * Problem 5 * * **");
 
+var evenNumArr = [];
+
+for (i = 0; evenNumArr.length <= 50; i+=2){
+
+	evenNumArr.push(i);
+}
+
+console.log("evenNumArr: " + evenNumArr);
+
 console.log("----------------------------------------------------------");
 
 /* 6) Up the Odds
@@ -109,6 +118,8 @@ Console.log your results.
 */
 
 console.log("** * * Problem 6 * * **");
+
+
 
 console.log("----------------------------------------------------------");  
 
