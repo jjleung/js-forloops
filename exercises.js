@@ -58,6 +58,19 @@ This function will iterate through the person parameter and console.log the foll
 */
 console.log("** * * Problem 3 * * **");
 
+var presidents = ["Washington", "Adams", "Jefferson", "Madison", "Monroe"];
+console.log("presidents.length: " + presidents.length);
+
+function leaders(person){
+
+	for (i = 0; i< person.length; i++){
+
+		console.log("President " + person[i] + "was a great leader.");
+	}
+}
+
+leaders(presidents);
+
 console.log("----------------------------------------------------------");
 
 /* 4) Line Number
@@ -66,6 +79,14 @@ Declare a variable named `stringOfNumbers` and assign its value to an empty stri
 Write a for-loop that concatenates a Number value into that string on each iteration, starting at `10` and continuing up to and including `20`. Console.log your result. It should read "1011121314151617181920"*/
 
 console.log("** * * Problem 4 * * **");
+
+var stringOfNumbers = "";
+
+for (i = 10; i <= 20; i++){
+	stringOfNumbers += i;
+}
+
+console.log("stringOfNumbers: " + stringOfNumbers);
 
 console.log("----------------------------------------------------------");
 
