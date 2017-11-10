@@ -297,7 +297,24 @@ Write a function named `generateArrayOfStrings` which takes a single argument `s
 
 console.log("** * * Problem 12 * * **");
 
+var miscStorage = [ [], 'Carrots', 9, 'Beets', {}, {name: "Todd B."}, 'Mush'];
 
+function generateArrayofStrings(storage){
+
+	var outArr = [];
+
+	for (var i = 0; i < storage.length; i++){
+
+		if (typeof storage[i] == "string"){
+
+			outArr.push(storage[i]);
+		}
+	}
+
+	return outArr;
+}
+
+console.log("generateArrayofStrings(miscStorage): " + generateArrayofStrings(miscStorage));
 
 console.log("----------------------------------------------------------");
 
@@ -308,6 +325,27 @@ Write a function that will capitalize the first letter in each word in the phras
 var myWay = "i've lived a life that's full, i've traveled each and every highway. but more, much more than this. i did it my way.";
 
 console.log("** * * Problem 13 * * **");
+
+function grownUp(str){
+
+	for (var i = 0; i < str.length; i++){
+
+		if(i === 0){
+
+			str = str.charAt(i).toUpperCase() + str.slice(1);
+		}
+
+		else if (str.charAt(i-1) === " "){
+
+			// console.log(str.charAt(i));
+			str = str.slice(0,i) + str.charAt(i).toUpperCase() + str.slice(i+1);
+		}
+	}
+
+	return str;
+}
+
+console.log("grownUp(myWay): " + grownUp(myWay));
 
 console.log("----------------------------------------------------------");
 
