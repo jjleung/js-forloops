@@ -246,8 +246,43 @@ console.log("----------------------------------------------------------");
 Declare a variable named `topQuote` and assign it to a String value of your favorite one line quote.
 Write a function that will iterate through the string value and return the longest word in that quote. Console.log your result.
 */
-
+console.log("***** FINAL BOSS *****");
 console.log("** * * Problem 11 * * **");
+
+var topQuote = "The ability to destroy a planet is insignificant next to the power of the Force.";
+
+function longest(quote){
+
+	var tempWord = "";
+	var longestWord = "";
+	var wordStart = 0;
+	var wordEnd = 0;
+
+	for (var i = 0; i <= quote.length; i++){
+
+		if (quote.charAt(i) == " " || quote.charAt(i) == "."){
+
+			wordEnd = i;
+			tempWord = quote.slice(wordStart, wordEnd);
+			// console.log(tempWord);
+
+			if (tempWord.length > longestWord.length){
+
+				longestWord = tempWord;
+
+			}
+
+			wordStart = wordEnd+1;
+
+		}
+
+	}
+
+	return longestWord;
+}
+
+console.log("topQuote: " + topQuote);
+console.log("longest(topQuote): " + longest(topQuote));
 
 console.log("----------------------------------------------------------");
 
@@ -261,6 +296,8 @@ Write a function named `generateArrayOfStrings` which takes a single argument `s
 */
 
 console.log("** * * Problem 12 * * **");
+
+
 
 console.log("----------------------------------------------------------");
 
