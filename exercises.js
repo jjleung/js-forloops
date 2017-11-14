@@ -405,13 +405,19 @@ function graduateAndSetNewClass(cohort){
 	if(cohort[i].enrolled === true){
     	
     	cohort[i].graduated = true;
+    	
+
   	}else{
     	
     	cohort[i].graduated = false;
   }
+
+  console.log(cohort[i]);
  }
- 
+
  return cohort;
 }
 
+graduateAndSetNewClass(currentCohort);
+// console.log("graduateAndSetNewClass(currentCohort): " + graduateAndSetNewClass(currentCohort));
 console.log("----------------------------------------------------------");
